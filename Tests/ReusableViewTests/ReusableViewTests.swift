@@ -1,11 +1,23 @@
-    import XCTest
-    @testable import ReusableView
+/**
+ * ReusableView
+ * Copyright (c) Luca Meghnagi 2021
+ * MIT license, see LICENSE file for details
+ */
+    
+import XCTest
+@testable import ReusableView
 
-    final class ReusableViewTests: XCTestCase {
-        func testExample() {
-            // This is an example of a functional test case.
-            // Use XCTAssert and related functions to verify your tests produce the correct
-            // results.
-            XCTAssertEqual(ReusableView().text, "Hello, World!")
-        }
+class TableViewCell: UITableViewCell {}
+
+class CollectionViewCell: UICollectionViewCell {}
+
+final class ReusableViewTests: XCTestCase {
+    
+    func testTableViewCellReuseIdentifier() {
+        XCTAssertEqual(TableViewCell.reuseIdentifier, "TableViewCell")
     }
+    
+    func testCollectionViewCellReuseIdentifier() {
+        XCTAssertEqual(CollectionViewCell.reuseIdentifier, "CollectionViewCell")
+    }
+}
