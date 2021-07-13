@@ -4,7 +4,7 @@ ReusableView was primarly developed for [Lists](https://github.com/lucamegh/List
 
 ## Installation
 
-Portal is distributed using [Swift Package Manager](https://swift.org/package-manager). To install it into a project, simply add it as a dependency within your Package.swift manifest:
+ReusableView is distributed using [Swift Package Manager](https://swift.org/package-manager). To install it into a project, simply add it as a dependency within your Package.swift manifest:
 ```swift
 let package = Package(
     ...
