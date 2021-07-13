@@ -12,6 +12,10 @@ public extension UITableView {
         register(Cell.self, forCellReuseIdentifier: Cell.reuseIdentifier)
     }
     
+    func registerNib<Cell: UITableViewCell & NibLoadableView>(_: Cell.Type) {
+        register(Cell.nib, forCellReuseIdentifier: Cell.reuseIdentifier)
+    }
+    
     func registerHeaderFooterView<View: UITableViewHeaderFooterView>(_: View.Type) {
         register(View.self, forHeaderFooterViewReuseIdentifier: View.reuseIdentifier)
     }
