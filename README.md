@@ -19,7 +19,7 @@ let package = Package(
 
 ### Registering cells
 
-UIKit:
+Vanilla UIKit:
 ```swift
 tableView.register(ArticleCell.self, forCellReuseIdentifier: "ArticleCell")
 ```
@@ -33,7 +33,7 @@ Using Nibs? Make your cell conform to `NibLoadableView` and call `registerNib`.
 
 ### Dequeuing cells
 
-UIKit:
+Vanilla UIKit:
 ```swift
 collectionView.dequeueReusableCell(withReuseIdentifier: "PostCell", for: indexPath) as! PostCell
 ```
