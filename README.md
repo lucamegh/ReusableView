@@ -27,8 +27,6 @@ tableView.register(ArticleCell.self, forCellReuseIdentifier: "ArticleCell")
 ReusableView:
 ```swift
 tableView.register(ArticleCell.self)
-    // cell configuration goes here
-}
 ```
 
 Using Nibs? Make your cell conform to `NibLoadableView` and call `registerNib`.
@@ -45,7 +43,7 @@ ReusableView:
 collectionView.dequeue(PostCell.self, for: indexPath)
 ```
 
-You can also optionally dequeue and configure cells right away:
+You can also dequeue and configure cells right away:
 ```swift
 collectionView.dequeue(ArticleCell.self, for: indexPath) { cell in
     // cell configuration goes here
